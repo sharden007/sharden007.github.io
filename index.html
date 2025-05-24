@@ -1,0 +1,576 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forex Fusion EA - JIG</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .gradient-bg {
+            background: linear-gradient(135deg, #1e3a8a 0%, #0ea5e9 100%);
+        }
+        .card-hover:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+        .feature-icon {
+            width: 50px;
+            height: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 12px;
+            margin-bottom: 15px;
+        }
+        .pricing-card {
+            transition: all 0.3s ease;
+        }
+        .popular-badge {
+            position: absolute;
+            top: -15px;
+            right: 20px;
+            background-color: #f59e0b;
+            color: white;
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-size: 12px;
+            font-weight: bold;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+        }
+        .testimonial-card {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+        }
+        .nav-link {
+            position: relative;
+        }
+        .nav-link:after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            bottom: -2px;
+            left: 0;
+            background-color: #3b82f6;
+            transition: width 0.3s ease;
+        }
+        .nav-link:hover:after {
+            width: 100%;
+        }
+    </style>
+</head>
+<body class="bg-gray-50 font-sans">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-lg sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16">
+                <div class="flex items-center">
+                    <div class="flex-shrink-0 flex items-center">
+                        <i class="fas fa-robot text-blue-600 text-2xl mr-2"></i>
+                        <span class="text-xl font-bold text-gray-900">Forex Fusion EA</span>
+                    </div>
+                </div>
+                <div class="hidden md:ml-6 md:flex md:items-center md:space-x-8">
+                    <a href="#features" class="nav-link text-gray-700 hover:text-blue-600 px-3 py-2 text-sm font-medium">Features</a>
+                    <a href="#pricing" class="nav-link text-gray-700 hover:text-blue-600 px-3 py-2 text-sm font-medium">Pricing</a>
+                    <a href="#testimonials" class="nav-link text-gray-700 hover:text-blue-600 px-3 py-2 text-sm font-medium">Testimonials</a>
+                    <a href="#faq" class="nav-link text-gray-700 hover:text-blue-600 px-3 py-2 text-sm font-medium">FAQ</a>
+                </div>
+                <div class="flex items-center">
+                    <a href="#pricing" class="ml-8 inline-flex items-center px-4 py-2 border border-transparent text-sm font-medium rounded-md text-white bg-blue-600 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500">
+                        Get Started
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <div class="gradient-bg text-white">
+        <div class="max-w-7xl mx-auto py-16 px-4 sm:py-24 sm:px-6 lg:px-8">
+            <div class="text-center">
+                <h1 class="text-4xl font-extrabold tracking-tight sm:text-5xl lg:text-6xl">
+                    Revolutionize Your Trading with the Forex Fusion Expert Advisor
+                </h1>
+
+                <section class="flex flex-col items-center mt-8">
+                 <img src="ff_image2.png" alt="Forex Fusion Software Package" class="w-80 mb-6 rounded shadow-lg">
+                  <h1 class="text-3xl font-bold mb-2">Forex Fusion EA</h1>
+                                  <!-- Existing feature list and call-to-action buttons go here -->
+                </section>
+
+                <p class="mt-6 max-w-lg mx-auto text-xl text-blue-100">
+                    Advanced automatic algorithmic trading solution for the MetaTrader 4 platform. Developed by the Jaguar Investment Group (JIG) L.L.C.
+                </p>
+                <div class="mt-10 flex justify-center space-x-4">
+                    <a href="#pricing" class="inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-md text-blue-700 bg-white hover:bg-blue-50">
+                        Choose Your Plan
+                    </a>
+                    <a href="#features" class="inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-md text-white bg-blue-500 bg-opacity-60 hover:bg-opacity-70">
+                        Learn More
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Features Section -->
+    <div id="features" class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center">
+                <h2 class="text-3xl font-extrabold text-gray-900 sm:text-4xl">
+                    Powerful Features
+                </h2>
+                <p class="mt-4 max-w-2xl text-xl text-gray-500 mx-auto">
+                    Our Expert Advisor is packed with cutting-edge technology to maximize your profits
+                </p>
+            </div>
+
+            <div class="mt-20">
+                <div class="grid grid-cols-1 gap-12 md:grid-cols-3">
+                    <div class="pt-6">
+                        <div class="flow-root bg-gray-50 rounded-lg px-6 pb-8 h-full card-hover">
+                            <div class="-mt-6">
+                                <div class="feature-icon bg-blue-100 text-blue-600 mx-auto">
+                                    <i class="fas fa-brain text-2xl"></i>
+                                </div>
+                                <h3 class="mt-8 text-lg font-medium text-gray-900 text-center">AI-Powered Algorithms</h3>
+                                <p class="mt-5 text-base text-gray-500">
+                                    Our neural networks analyze market conditions in real-time, adapting to changing volatility and trends for optimal performance.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="pt-6">
+                        <div class="flow-root bg-gray-50 rounded-lg px-6 pb-8 h-full card-hover">
+                            <div class="-mt-6">
+                                <div class="feature-icon bg-green-100 text-green-600 mx-auto">
+                                    <i class="fas fa-shield-alt text-2xl"></i>
+                                </div>
+                                <h3 class="mt-8 text-lg font-medium text-gray-900 text-center">Risk Management</h3>
+                                <p class="mt-5 text-base text-gray-500">
+                                    Advanced stop-loss and take-profit algorithms protect your capital while maximizing profit potential.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="pt-6">
+                        <div class="flow-root bg-gray-50 rounded-lg px-6 pb-8 h-full card-hover">
+                            <div class="-mt-6">
+                                <div class="feature-icon bg-purple-100 text-purple-600 mx-auto">
+                                    <i class="fas fa-chart-line text-2xl"></i>
+                                </div>
+                                <h3 class="mt-8 text-lg font-medium text-gray-900 text-center">Multi-Timeframe Analysis</h3>
+                                <p class="mt-5 text-base text-gray-500">
+                                    Simultaneously analyzes multiple timeframes to identify high-probability trading opportunities across all market conditions.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Pricing Section -->
+    <div id="pricing" class="gradient-bg py-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center">
+                <h2 class="text-3xl font-extrabold text-white sm:text-4xl">
+                    Simple, Transparent Pricing
+                </h2>
+                <p class="mt-4 max-w-2xl text-xl text-blue-100 mx-auto">
+                    Choose the perfect option for your trading needs
+                </p>
+            </div>
+
+            <div class="mt-16 space-y-12 lg:space-y-0 lg:grid lg:grid-cols-2 lg:gap-x-8 max-w-5xl mx-auto">
+                <!-- Monthly Subscription -->
+                <div class="relative bg-white rounded-2xl shadow-xl overflow-hidden pricing-card">
+                    
+                    <div class="p-8">
+                        <h3 class="text-2xl font-bold text-gray-900">Monthly Subscription</h3>
+                        <p class="mt-4 text-gray-500">Flexible monthly access to Forex Fusion EA</p>
+                        <div class="mt-6">
+                            <p class="text-4xl font-extrabold text-gray-900">$$<span class="text-lg font-medium text-gray-500">/month (Recurring billing)</span></p>
+                            <p class="mt-2 text-sm text-gray-500">Cancel anytime</p>
+                        </div>
+                        <ul class="mt-8 space-y-4">
+                            <li class="flex items-start">
+                                <div class="flex-shrink-0 text-green-500">
+                                    <i class="fas fa-check"></i>
+                                </div>
+                                <p class="ml-3 text-base text-gray-700">Full access to all EA features/currency pairs</p>
+                            </li>
+                            <li class="flex items-start">
+                                <div class="flex-shrink-0 text-green-500">
+                                    <i class="fas fa-check"></i>
+                                </div>
+                                <p class="ml-3 text-base text-gray-700">Standard risk management</p>
+                            </li>
+                            <li class="flex items-start">
+                                <div class="flex-shrink-0 text-green-500">
+                                    <i class="fas fa-check"></i>
+                                </div>
+                                <p class="ml-3 text-base text-gray-700">Default settings file included </p>
+                            </li>
+
+                            <li class="flex items-start">
+                                <div class="flex-shrink-0 text-green-500">
+                                    <i class="fas fa-check"></i>
+                                </div>
+                                <p class="ml-3 text-base text-gray-700">Installation instructions</p>
+                            </li>
+                            <li class="flex items-start">
+                                <div class="flex-shrink-0 text-green-500">
+                                    <i class="fas fa-check"></i>
+                                </div>
+                                <p class="ml-3 text-base text-gray-700">Standard email support</p>
+
+                            </li>
+
+                        </ul>
+                        <a href="#" class="mt-8 block w-full py-3 px-6 border border-transparent rounded-md text-center font-medium bg-blue-600 text-white hover:bg-blue-700">
+                            Subscribe Monthly
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Lifetime Purchase -->
+                <div class="relative bg-white rounded-2xl shadow-xl overflow-hidden pricing-card">
+                    <div class="p-8">
+                        <div class="popular-badge">RECOMMENDED</div>
+                        <h3 class="text-2xl font-bold text-gray-900">Lifetime Purchase</h3>
+                        <p class="mt-4 text-gray-500">Own Forex Fusion EA forever</p>
+                        <div class="mt-6">
+                            <p class="text-4xl font-extrabold text-gray-900">$$$</p>
+                            <p class="mt-2 text-sm text-gray-500">One-time payment</p>
+                        </div>
+                        <ul class="mt-8 space-y-4">
+                            <li class="flex items-start">
+                                <div class="flex-shrink-0 text-green-500">
+                                    <i class="fas fa-check"></i>
+                                </div>
+                                <p class="ml-3 text-base text-gray-700">Full access to all EA features/currency pairs</p>
+                            </li>
+                            <li class="flex items-start">
+                                <div class="flex-shrink-0 text-green-500">
+                                    <i class="fas fa-check"></i>
+                                </div>
+                                <p class="ml-3 text-base text-gray-700">Advanced risk management</p>
+                            </li>
+                            <li class="flex items-start">
+                                <div class="flex-shrink-0 text-green-500">
+                                    <i class="fas fa-check"></i>
+                                </div>
+                                <p class="ml-3 text-base text-gray-700">Advanced settings files included </p>
+                            </li>
+                            <li class="flex items-start">
+                                <div class="flex-shrink-0 text-green-500">
+                                    <i class="fas fa-check"></i>
+                                </div>
+                                <p class="ml-3 text-base text-gray-700">Priority email support</p>
+                            </li>
+                            <li class="flex items-start">
+                                <div class="flex-shrink-0 text-green-500">
+                                    <i class="fas fa-check"></i>
+                                </div>
+                                <p class="ml-3 text-base text-gray-700">Free Updates</p>
+                            </li>
+                        </ul>
+                        <a href="#" class="mt-8 block w-full py-3 px-6 border border-transparent rounded-md text-center font-medium bg-blue-600 text-white hover:bg-blue-700">
+                            Buy Now
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Free Trial CTA -->
+            <div class="mt-16 text-center">
+                <div class="inline-block bg-white bg-opacity-20 backdrop-filter backdrop-blur-sm rounded-lg px-8 py-6">
+                    <h3 class="text-xl font-medium text-white">Not ready to commit?</h3>
+                    <p class="mt-2 text-blue-100">Try Forex Fusion EA absolutely free for 2 days with no obligation!</p>
+                    <a href="mailto:simplytech116@gmail.com?subject=Forex%20Fusion%20Free Trial" class="mt-4 inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-md text-white bg-green-600 hover:bg-green-700">
+                        <i class="fas fa-play-circle mr-2"></i> Request a Free Trial
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Testimonials -->
+    <div id="testimonials" class="py-16 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center">
+                <h2 class="text-3xl font-extrabold text-gray-900 sm:text-4xl">
+                    What Our Customers Say
+                </h2>
+                <p class="mt-4 max-w-2xl text-xl text-gray-500 mx-auto">
+                    Don't just take our word for it - See what real traders have to say about their success with the Forex Fusion EA.
+                </p>
+            </div>
+
+            <div class="mt-16 grid grid-cols-1 gap-8 md:grid-cols-3">
+                <div class="testimonial-card rounded-lg p-8">
+                    <div class="flex items-center">
+                        <div class="flex-shrink-0">
+                            <img class="h-12 w-12 rounded-full" src="https://randomuser.me/api/portraits/women/44.jpg" alt="">
+                        </div>
+                        <div class="ml-4">
+                            <h4 class="text-lg font-medium text-white">Sarah Johnson</h4>
+                            <p class="text-blue-900">Forex Trader, 2 years experience</p>
+                        </div>
+                    </div>
+                    <p class="mt-4 text-blue-700">
+                        "Forex Fusion has completely changed my trading. I've seen a 35% increase in my account in just 3 months with minimal drawdown. The multi-timeframe analysis is a game-changer."
+                    </p>
+                    <div class="mt-4 flex text-yellow-400">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                </div>
+
+                <div class="testimonial-card rounded-lg p-8">
+                    <div class="flex items-center">
+                        <div class="flex-shrink-0">
+                            <img class="h-12 w-12 rounded-full" src="https://randomuser.me/api/portraits/men/32.jpg" alt="">
+                        </div>
+                        <div class="ml-4">
+                            <h4 class="text-lg font-medium text-white">Michael Chen</h4>
+                            <p class="text-blue-900">Fund Manager, 8 years experience</p>
+                        </div>
+                    </div>
+                    <p class="mt-4 text-blue-700">
+                        "We've been extremely impressed with the adaptive algorithms. The risk management features give us peace of mind for overnight positions."
+                    </p>
+                    <div class="mt-4 flex text-yellow-400">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                </div>
+
+                <div class="testimonial-card rounded-lg p-8">
+                    <div class="flex items-center">
+                        <div class="flex-shrink-0">
+                            <img class="h-12 w-12 rounded-full" src="https://randomuser.me/api/portraits/men/75.jpg" alt="">
+                        </div>
+                        <div class="ml-4">
+                            <h4 class="text-lg font-medium text-white">David Rodriguez</h4>
+                            <p class="text-blue-900">Part-time Trader, 1 year experience</p>
+                        </div>
+                    </div>
+                    <p class="mt-4 text-blue-700">
+                        "As someone with limited time to trade, Forex Fusion has been perfect. It trades while I'm at work and has consistently outperformed my manual trading."
+                    </p>
+                    <div class="mt-4 flex text-yellow-400">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- FAQ Section -->
+    <div id="faq" class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center">
+                <h2 class="text-3xl font-extrabold text-gray-900 sm:text-4xl">
+                    Frequently Asked Questions
+                </h2>
+                <p class="mt-4 max-w-2xl text-xl text-gray-500 mx-auto">
+                    Everything you need to know about Forex Fusion EA
+                </p>
+            </div>
+
+            <div class="mt-12 max-w-3xl mx-auto">
+                <div class="space-y-6">
+                    <div class="border border-gray-200 rounded-lg overflow-hidden">
+                        <button class="w-full flex justify-between items-center p-6 text-left focus:outline-none" onclick="toggleFAQ(1)">
+                            <h3 class="text-lg font-medium text-gray-900">Which MetaTrader platforms are supported?</h3>
+                            <i class="fas fa-chevron-down text-blue-600 transition-transform duration-200" id="faq-icon-1"></i>
+                        </button>
+                        <div class="px-6 pb-6 hidden" id="faq-content-1">
+                            <p class="text-gray-500">
+                                Forex Fusion EA is compatible with all MetaTrader 4 platforms. The EA works with all major brokers that support MT4.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="border border-gray-200 rounded-lg overflow-hidden">
+                        <button class="w-full flex justify-between items-center p-6 text-left focus:outline-none" onclick="toggleFAQ(2)">
+                            <h3 class="text-lg font-medium text-gray-900">What's the minimum account balance required?</h3>
+                            <i class="fas fa-chevron-down text-blue-600 transition-transform duration-200" id="faq-icon-2"></i>
+                        </button>
+                        <div class="px-6 pb-6 hidden" id="faq-content-2">
+                            <p class="text-gray-500">
+                                We recommend at least $1,000 for optimal performance since the default settings were based on this amount. However, the EA can technically run on smaller accounts with adjusted risk parameters/settings.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="border border-gray-200 rounded-lg overflow-hidden">
+                        <button class="w-full flex justify-between items-center p-6 text-left focus:outline-none" onclick="toggleFAQ(3)">
+                            <h3 class="text-lg font-medium text-gray-900">Which Currency Pairs/TF is this used on?</h3>
+                            <i class="fas fa-chevron-down text-blue-600 transition-transform duration-200" id="faq-icon-3"></i>
+                        </button>
+                        <div class="px-6 pb-6 hidden" id="faq-content-3">
+                            <p class="text-gray-500">
+                                Forex Fusion is optimized specifically for the EUR/USD and GBP/USD currency pairs on the M15 (15-minute) timeframe.  But Forex Fusion can be used on all currency pairs and well as various timeframes.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="border border-gray-200 rounded-lg overflow-hidden">
+                        <button class="w-full flex justify-between items-center p-6 text-left focus:outline-none" onclick="toggleFAQ(4)">
+                            <h3 class="text-lg font-medium text-gray-900">How does the free trial work?</h3>
+                            <i class="fas fa-chevron-down text-blue-600 transition-transform duration-200" id="faq-icon-4"></i>
+                        </button>
+                        <div class="px-6 pb-6 hidden" id="faq-content-4">
+                            <p class="text-gray-500">
+                                Our 3-day free trial gives you full access to all features of Forex Fusion EA with no credit card required. After 3 days, you'll need to choose a subscription or purchase plan to continue using it.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="border border-gray-200 rounded-lg overflow-hidden">
+                        <button class="w-full flex justify-between items-center p-6 text-left focus:outline-none" onclick="toggleFAQ(5)">
+                            <h3 class="text-lg font-medium text-gray-900">How often are the algorithms updated?</h3>
+                            <i class="fas fa-chevron-down text-blue-600 transition-transform duration-200" id="faq-icon-5"></i>
+                        </button>
+                        <div class="px-6 pb-6 hidden" id="faq-content-5">
+                            <p class="text-gray-500">
+                                Our team at Jaguar Investment Group (JIG) continuously monitors and improves the algorithms based on changing market conditions and on-going testing and will provide updates as needed regardless of which purchase option you choose. Therefore, you will always have the latest version of Forex Fusion.                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- CTA Section -->
+    <div class="gradient-bg py-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center">
+                <h2 class="text-3xl font-extrabold text-white sm:text-4xl">
+                    Ready to Transform Your Trading?
+                </h2>
+                <p class="mt-4 max-w-2xl text-xl text-blue-100 mx-auto">
+                    Join thousands of traders who trust Forex Fusion EA by the Jaguar Investment Group to grow their accounts automatically!
+                </p>
+                <div class="mt-10 flex justify-center space-x-4">
+                    <a href="#pricing" class="inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-md text-blue-700 bg-white hover:bg-blue-50">
+                        Choose Your Plan
+                    </a>
+                    <a href="mailto:simplytech116@gmail.com?subject=Forex%20Fusion%20Site" class="inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-md text-white bg-blue-500 bg-opacity-60 hover:bg-opacity-70">
+    <i class="fas fa-envelope mr-2"></i> Contact Us
+</a>                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white">
+        <div class="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-sm font-semibold text-gray-400 tracking-wider uppercase">Products</h3>
+                    <ul class="mt-4 space-y-4">
+                        <li><a href="#" class="text-base text-gray-300 hover:text-white">Forex Fusion EA</a></li>
+                        <li><a href="#" class="text-base text-gray-300 hover:text-white">Free Trial</a></li>
+                        <li><a href="#" class="text-base text-gray-300 hover:text-white">Updates</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-sm font-semibold text-gray-400 tracking-wider uppercase">Resources</h3>
+                    <ul class="mt-4 space-y-4">
+                        <li><a href="#" class="text-base text-gray-300 hover:text-white">Documentation</a></li>
+                        <li><a href="#" class="text-base text-gray-300 hover:text-white">Tutorials</a></li>
+                        <li><a href="#" class="text-base text-gray-300 hover:text-white">Support</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-sm font-semibold text-gray-400 tracking-wider uppercase">Company</h3>
+                    <ul class="mt-4 space-y-4">
+                        <li><a href="#" class="text-base text-gray-300 hover:text-white">About Jaguar Investment Group (JIG)</a></li>
+                        <li><a href="#" class="text-base text-gray-300 hover:text-white">Blog</a></li>
+                        <li><a href="#" class="text-base text-gray-300 hover:text-white">Careers</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-sm font-semibold text-gray-400 tracking-wider uppercase">Legal</h3>
+                    <ul class="mt-4 space-y-4">
+                        <li><a href="#" class="text-base text-gray-300 hover:text-white">Privacy</a></li>
+                        <li><a href="#" class="text-base text-gray-300 hover:text-white">Terms</a></li>
+                        <li><a href="#" class="text-base text-gray-300 hover:text-white">Risk Disclosure</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="mt-12 border-t border-gray-800 pt-8 flex flex-col md:flex-row justify-between">
+                <div class="flex space-x-6">
+                    <a href="#" class="text-gray-400 hover:text-white">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="#" class="text-gray-400 hover:text-white">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="#" class="text-gray-400 hover:text-white">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="#" class="text-gray-400 hover:text-white">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                </div>
+                <p class="mt-8 md:mt-0 text-base text-gray-400">
+                    &copy; 2025 Jaguar Investment Group (JIG) LLC. All rights reserved.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Toggle FAQ items
+        function toggleFAQ(id) {
+            const content = document.getElementById(`faq-content-${id}`);
+            const icon = document.getElementById(`faq-icon-${id}`);
+            
+            if (content.classList.contains('hidden')) {
+                content.classList.remove('hidden');
+                icon.classList.add('rotate-180');
+            } else {
+                content.classList.add('hidden');
+                icon.classList.remove('rotate-180');
+            }
+        }
+
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                
+                const targetId = this.getAttribute('href');
+                if (targetId === '#') return;
+                
+                const targetElement = document.querySelector(targetId);
+                if (targetElement) {
+                    targetElement.scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>
