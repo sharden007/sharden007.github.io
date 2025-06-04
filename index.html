@@ -267,29 +267,9 @@
                             </li>
 
                         </ul>
-
-                          <div id="paypal-button-container"></div>
-                          <script src="https://www.paypal.com/sdk/js?client-id=Aeyj9Jtt3kVEhaN_njaXveyqj789kf6Ys1CgHyDejDXj2O1GLrFz2VCnQG9wM8fxVeHr89lCTz5_Vde7&currency=USD&disable-funding=paylater"></script>
-                          <script>
-                            paypal.Buttons({
-                            createOrder: function(data, actions) {
-                            return actions.order.create({
-                            purchase_units: [{
-                              amount: {
-                               value: '350.00' // Replace with your price
-                               }
-                            }]
-                        });
-                       },
-                 onApprove: function(data, actions) {
-                 return actions.order.capture().then(function(details) {
-                   alert('Transaction completed by ' + details.payer.name.given_name + '!');
-                   });
-                }
-             }).render('#paypal-button-container');
-          </script>
-                        
-                        
+                        <a href="#" class="mt-8 block w-full py-3 px-6 border border-transparent rounded-md text-center font-medium bg-blue-600 text-white hover:bg-blue-700">
+                            Subscribe Monthly
+                        </a>
                     </div>
                 </div>
 
@@ -364,6 +344,10 @@
              }).render('#paypal-button-container');
           </script>
 
+                        
+                        <a href="#" class="mt-8 block w-full py-3 px-6 border border-transparent rounded-md text-center font-medium bg-blue-600 text-white hover:bg-blue-700">
+                            Buy Now
+                        </a>
                     </div>
                 </div>
             </div>
