@@ -222,9 +222,7 @@
             </div>
 
             <div class="mt-16 space-y-12 lg:space-y-0 lg:grid lg:grid-cols-2 lg:gap-x-8 max-w-5xl mx-auto">
-                <!-- Monthly Subscription -->
                 <div class="relative bg-white rounded-2xl shadow-xl overflow-hidden pricing-card">
-                    
                     <div class="p-8">
                         <h3 class="text-2xl font-bold text-gray-900">Monthly Subscription (Coming Soon!!!)</h3>
                         <p class="mt-4 text-gray-500">Flexible monthly access to the Forex Fusion Pro EA</p>
@@ -251,7 +249,6 @@
                                 </div>
                                 <p class="ml-3 text-base text-gray-700">Default settings file included </p>
                             </li>
-
                             <li class="flex items-start">
                                 <div class="flex-shrink-0 text-green-500">
                                     <i class="fas fa-check"></i>
@@ -263,57 +260,45 @@
                                     <i class="fas fa-check"></i>
                                 </div>
                                 <p class="ml-3 text-base text-gray-700">Standard email support</p>
-
                             </li>
-
                         </ul>
 
                         <div id="paypal-button-container-P-1EX147876M972004TNBAJQGQ"></div>
-                            <script src="https://www.paypal.com/sdk/js?client-id=AfjrxQUdF4lm_j3ByfhdycPND0wMcpK9P4JPS7p8wDe7KVDEnHNsuN-1Cj0weg2NoZu3cLo_U9zqkggN&vault=true&intent=subscription" data-sdk-integration-source="button-factory"></script>
-                             <script>
-                                paypal.Buttons({
-                                 style: {
-                                 shape: 'rect',
-                                 color: 'gold',
-                                 layout: 'vertical',
-                                 label: 'subscribe'
-                              },
-                                  createSubscription: function(data, actions) {
-                                  return actions.subscription.create({
-                                /* Creates the subscription */
-                                  plan_id: 'P-1EX147876M972004TNBAJQGQ'
-                               });
-                             },
-                               onApprove: function(data, actions) {
-                               alert(data.subscriptionID); // You can add optional success message for the subscriber here
-                              }
+                        <script src="https://www.paypal.com/sdk/js?client-id=AfjrxQUdF4lm_j3ByfhdycPND0wMcpK9P4JPS7p8wDe7KVDEnHNsuN-1Cj0weg2NoZu3cLo_U9zqkggN&vault=true&intent=subscription" data-sdk-integration-source="button-factory"></script>
+                        <script>
+                            paypal.Buttons({
+                                style: {
+                                    shape: 'rect',
+                                    color: 'gold',
+                                    layout: 'vertical',
+                                    label: 'subscribe'
+                                },
+                                createSubscription: function(data, actions) {
+                                    return actions.subscription.create({
+                                        /* Creates the subscription */
+                                        plan_id: 'P-1EX147876M972004TNBAJQGQ'
+                                    });
+                                },
+                                onApprove: function(data, actions) {
+                                    alert(data.subscriptionID); // You can add optional success message for the subscriber here
+                                }
                             }).render('#paypal-button-container-P-1EX147876M972004TNBAJQGQ'); // Renders the PayPal button
-                           </script>
+                        </script>
                     </div>
                 </div>
-            </div>
-        </div>
-    </div>
-            
-        
 
-                <!-- Lifetime Purchase -->
                 <div class="relative bg-white rounded-2xl shadow-xl overflow-hidden pricing-card">
                     <div class="p-8">
                         <div class="popular-badge">RECOMMENDED</div>
                         <h3 class="text-2xl font-bold text-gray-900">1 Year License Purchase</h3>
                         <strong><p class="mt-4 text-gray-500">Use the Forex Fusion Pro EA for 1 entire year</p> </strong>
-
                         <div class="mt-6">
-                          <span style="font-size: 1.2em; color: #888; text-decoration: line-through;">$1,000</span>
-                          <span class="text-4xl font-extrabold" style="color: #abef10; margin-left: 12px;">$800</span>
-                           <br>
+                            <span style="font-size: 1.2em; color: #888; text-decoration: line-through;">$1,000</span>
+                            <span class="text-4xl font-extrabold" style="color: #abef10; margin-left: 12px;">$800</span>
+                            <br>
                             <span style="font-size: 0.95em; color: #c00;">Savings of $200! - Sale ends Jun 8!!!</span>
                             <p class="mt-2 text-sm text-gray-500">One-time payment</p>
-                         </div>
-
-
-                        
+                        </div>
                         <ul class="mt-8 space-y-4">
                             <li class="flex items-start">
                                 <div class="flex-shrink-0 text-green-500">
@@ -348,33 +333,28 @@
                         </ul>
 
                         <div id="paypal-button-container"></div>
-                          <script src="https://www.paypal.com/sdk/js?client-id=Aeyj9Jtt3kVEhaN_njaXveyqj789kf6Ys1CgHyDejDXj2O1GLrFz2VCnQG9wM8fxVeHr89lCTz5_Vde7&currency=USD&disable-funding=paylater"></script>
-                          <script>
+                        <script src="https://www.paypal.com/sdk/js?client-id=Aeyj9Jtt3kVEhaN_njaXveyqj789kf6Ys1CgHyDejDXj2O1GLrFz2VCnQG9wM8fxVeHr89lCTz5_Vde7&currency=USD&disable-funding=paylater"></script>
+                        <script>
                             paypal.Buttons({
-                            createOrder: function(data, actions) {
-                            return actions.order.create({
-                            purchase_units: [{
-                              amount: {
-                               value: '800.00' // Replace with your price
-                               }
-                            }]
-                        });
-                       },
-                 onApprove: function(data, actions) {
-                 return actions.order.capture().then(function(details) {
-                   alert('Transaction completed by ' + details.payer.name.given_name + '!');
-                   });
-                }
-             }).render('#paypal-button-container');
-          </script>
-
-                        
-                       
+                                createOrder: function(data, actions) {
+                                    return actions.order.create({
+                                        purchase_units: [{
+                                            amount: {
+                                                value: '800.00' // Replace with your price
+                                            }
+                                        }]
+                                    });
+                                },
+                                onApprove: function(data, actions) {
+                                    return actions.order.capture().then(function(details) {
+                                        alert('Transaction completed by ' + details.payer.name.given_name + '!');
+                                    });
+                                }
+                            }).render('#paypal-button-container');
+                        </script>
                     </div>
                 </div>
-            </div>
-
-        </div>
+            </div> </div>
     </div>
 
     <!-- Testimonials -->
